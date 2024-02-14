@@ -1,0 +1,114 @@
+%% LaTeX template for creation of extended abstracts for the
+%% 7th International Symposium on Three-Dimensional Electromagnetics
+%% 3DEM-7
+%%
+%% This template should run out-of-the box under Windows using MikTeX
+%% (www.miktex.org) and
+%% under Linux using tetex.
+%%
+%% Simply fill in the appropriate fields.
+%% Examples on how to include figures and tables are given in the text.
+%%
+%% Citation works well using apacite.
+%%
+%% Authors: Antje Franke and Ralph-Uwe Boerner (Freiberg, Germany)
+%%
+
+
+%%%%% PREAMBLE %%%%%
+\documentclass[10pt,pdftex,fleqn]{article}
+\usepackage{lastpage,afterpage,multicol,amsmath,tabularx,float}
+\usepackage[a4paper,left=2cm,right=2cm,top=3cm]{geometry}
+\usepackage[pdftex]{graphicx,color}
+\usepackage[english]{babel}
+\usepackage[indent,bf]{caption}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{apacite}
+\usepackage{natbib}
+\usepackage{multicol}
+
+\usepackage{titlesec}
+\titleformat{\section}{\bfseries\filcenter\scshape}{\bfseries}{1em}{}
+\titleformat{\subsection}{\bfseries}{\bfseries}{1ex}{}
+\setcounter{secnumdepth}{0}
+
+\setlength{\columnsep}{0.8cm}
+% \newcommand{\stanza}{\vskip 1ex}
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+
+%%%%% HEADER INFORMATION %%%%%
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\rhead{}
+\lhead{Heagy \& Oldenburg, 2023, EM with conductive, permeable wells}   %% Fill in with your information
+\lfoot{7th International Symposium on Three-Dimensional Electromagnetics\\
+Vancouver, BC, Canada, November 13--15, 2023}
+\lfoot{}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\headheight=35pt
+\voffset=0pt
+
+\fancypagestyle{fancyfirst}{
+\fancyhf{}
+\lhead{7th International Symposium on Three-Dimensional Electromagnetics\\
+Vancouver, BC, Canada, November 13--15, 2023}
+\lfoot{}
+\rfoot{\thepage/\pageref{LastPage}}
+\headheight=35pt
+}
+
+\floatstyle{plain} \restylefloat{figure}
+\floatname{fig}{Figure}
+\newfloat{fig}{H}{lof}
+\floatname{tab}{Table}
+\newfloat{tab}{H}{lot}
+
+%%%%% DOCUMENT %%%%%
+\begin{document}
+%% First page has a different header:
+\thispagestyle{fancyfirst}
+%% Give the title of the paper:
+\begin{center}
+\sffamily{\bfseries
+{\large Impacts of magnetic permeability on electromagnetic data collected in settings with steel-cased wells\par}}  % include full title here
+\end{center}
+
+
+%% Authors:
+\begin{center}
+Lindsey J. Heagy$^1$ and Douglas W. Oldenburg$^1$ \\
+$^1$University of British Columbia Geophysical Inversion Facility \\
+\end{center}
+\rule{\textwidth}{0.4pt}
+\section{Summary}
+
+\input{abstract}
+
+{\bfseries Keywords:} Controlled source electromagnetics (CSEM), Downhole methods, Numerical modelling, Electrical properties, Magnetic properties
+
+
+\rule{\textwidth}{0.4pt}
+
+\begin{multicols*}{2}
+
+\input{body}
+
+
+
+% \section{Acknowledgments}
+
+
+
+
+\bibliographystyle{apacite}
+\renewcommand\refname{\uppercase{References}} % keep this
+\bibliography{references}
+\end{multicols*}
+
+\end{document}
