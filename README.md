@@ -4,7 +4,7 @@ _Lindsey J. Heagy and Douglas W. Oldenburg_
 
 [https://3dem-7.geosci.xyz/abstracts/Heagy-2023-3DEM-7.pdf](https://3dem-7.geosci.xyz/abstracts/Heagy-2023-3DEM-7.pdf)
 
-![currents-in-casing](./paper/thumbnail.png)
+![poloidal-current-sketch](./abstract/thumbnail.png)
 
 ## Summary 
 
