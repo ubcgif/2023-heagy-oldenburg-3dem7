@@ -24,9 +24,12 @@ project:
   banner: banner.png
   thumbnail: thumbnail.png
   subject: Electromagnetics
-  venue: 3DEM-7
+  venue:
+    title: The 7th International Symposium on Three-Dimensional Electromagnetics
+    url: https://3dem-7.geosci.xyz/abstracts/Heagy-2023-3DEM-7.pdf
   license: CC-BY-4.0
   open_access: true
+  # doi: https://3dem-7.geosci.xyz/abstracts/Heagy-2023-3DEM-7.pdf
   abbreviations:
     DC: direct current
     EM: electromagnetics
@@ -37,5 +40,8 @@ site:
   actions:
     - title: pdf
       url: Heagy-2023-3DEM-7.pdf
+      static: true
+    - title: slides
+      url: presentation/Heagy-3DEM-7.pdf
       static: true
   domains: []

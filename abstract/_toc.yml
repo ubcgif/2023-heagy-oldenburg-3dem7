@@ -18,5 +18,4 @@
 format: jb-book
 root: article
 chapters:
-  - file: presentation/presentation.md
   - file: presentation/videos.md
